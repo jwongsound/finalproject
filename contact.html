@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FIND ME!</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="position2.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="grid">
+
+                <header></header>
+                        
+                <nav>
+                    <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="gallery.html"><li>Gallery</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div> 
+                    <form action="#" method="GET">
+                      
+                        
+                        <h1>Register Now!</h1>
+                
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Username" required>
+                        
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="E-Mail" required>
+                
+                        <label for="fileToUpload">Profile Picture</label>
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(Optional)">
+                
+                        <small class="smol">Format: 123-456-7890</small>
+                    
+                
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <input type="password" name="password2" id="password2" placeholder="Confirm Password" required>
+                        <small class="smol">must consist of at least six characters that are a<br> combination of letters, numbers and symbols <strong>(@, #, $, %, etc.)</strong></small>
+                
+                        <input id="submit" class="btn1" type="submit" value="Submit!">
+                    </form>
+                   </div>
+        
+    
+</body>
+</html>
