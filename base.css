@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto&display=swap');
+html, body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #1A0A17;
+}
+
+nav ul{
+    display:flex;
+    font-size: 25px;   
+    
+    justify-content: space-evenly;
+  
+    list-style-type: none;
+
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #F1CCDC;
+}
+
+header{
+    background-image: url(logo.jpg);
+    background-size: contain;
+
+    background-position:center;
+    background-repeat: no-repeat;
+    
+    /* preserving aspect ratio */
+    /* width: 100vw; */
+    height: 30vh;
+
+    box-shadow: 1px 1px #000000;
+}
+
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+h1 h2 h3 h4 h5 h6 a li{
+    font-family: 'Raleway', sans-serif;
+    color:white;
+}
+
+p{
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+}

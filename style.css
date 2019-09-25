@@ -1,0 +1,48 @@
+
+a:hover{
+    color:#863643;
+    transition: 0.25s ease;
+}
+
+main{
+    font-size: 23px;
+}
+
+
+
+.tracks{
+    font-size: 4em;
+}
+
+section{
+    /*   width:60vw; */
+      
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      min-width:20px;
+      justify-content:center;
+      align-items: center;
+    /*   flex-grow:3; */
+    }
+    img{
+      border-radius:5px;
+      border:1px solid black;
+      padding:10px;
+      margin:1vw auto;
+     
+      max-width: 25em;
+      /* min-height:20vh;  */
+      /* width: 20%; */
+      align-self:stretch;
+      background-color: rgba(134, 54, 67, 0.24);
+    }
+    
+    img:hover{
+      box-shadow: 5px 5px 5px rgba(5, 5, 5, .5);
+    /*   transform:scale(2.1,2.1); */
+      transform:rotate(0.005turn);
+      transition:.6s;
+    }
+
+   

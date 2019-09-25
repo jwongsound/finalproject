@@ -1,0 +1,64 @@
+/* positioning */
+.grid{
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header nav nav"
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+}
+
+nav{
+    grid-area: nav;
+    
+    background-color: black;
+    
+    align-self: center;
+}
+
+.maincont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "dj main main"
+    "astral main main"
+}
+
+
+.dj1{
+grid-area: dj;
+
+width: 90%;
+
+align-self:center;
+justify-self: center;
+margin: 10px;
+}
+
+.astral{
+grid-area: astral;
+
+width: 90%;
+
+align-self:center;
+justify-self: center;
+margin: 10px;
+}
+
+main{
+    grid-area: main;
+    padding: 5px;
+    margin: 40px;
+}
+
+footer{
+    text-align: center;
+}
+
+.tracks{
+    text-align: center;
+}
