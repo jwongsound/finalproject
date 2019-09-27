@@ -27,7 +27,7 @@ section{
       align-items: center;
     /*   flex-grow:3; */
     }
-    img{
+    .images{
       border-radius:5px;
       border:1px solid black;
       padding:10px;
@@ -39,8 +39,10 @@ section{
       align-self:stretch;
       background-color: rgba(134, 54, 67, 0.24);
     }
+
     
-    img:hover{
+    
+    .images:hover{
       box-shadow: 5px 5px 5px rgba(5, 5, 5, .5);
     /*   transform:scale(2.1,2.1); */
       transform:rotate(0.005turn);
@@ -94,4 +96,24 @@ section{
       border-color: rgba(250, 0, 229, 0.719);
       } 
      
-     
+     footer{
+       background: black;  
+       /* height: 20px; */
+       margin:0;
+     }
+     h6{
+       margin:0;
+       font-size:2ch;
+     }
+
+    .facebook{
+      width: 6%;
+      background-color: #F1CCDC;
+    }
+
+    .ig{
+      width: 6%;
+      background-color: #F1CCDC;
+    }
+
+ 

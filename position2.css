@@ -1,11 +1,19 @@
 /* positioning */
+
+
+/* navbar grid */
 .grid{
     display: grid;
     background-color: black;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "header nav nav"
+    /* "header header header"
+    "nav nav nav" */
+
 }
+
+/* header position */
 
 header{
     grid-area: header;
@@ -20,16 +28,18 @@ nav{
     align-self: center;
 }
 
+/* about page grid */
 .maincont{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "dj main main"
+    "astral2 main main"
     "astral main main"
+    "dj astral3 boner"
 }
 
 
-.dj1{
+#dj1{
 grid-area: dj;
 
 width: 90%;
@@ -39,8 +49,38 @@ justify-self: center;
 margin: 10px;
 }
 
-.astral{
+#astral{
 grid-area: astral;
+
+width: 90%;
+
+align-self:center;
+justify-self: center;
+margin: 10px;
+}
+
+#astral2{
+grid-area: astral2;
+
+width: 90%;
+
+align-self:center;
+justify-self: center;
+margin: 10px;
+}
+
+#astral3{
+grid-area: astral3;
+
+width: 90%;
+
+align-self:center;
+justify-self: center;
+margin: 10px;
+}
+
+#boner{
+grid-area: boner;
 
 width: 90%;
 
@@ -54,7 +94,7 @@ main{
     padding: 5px;
     margin: 40px;
 }
-
+/*text align's */
 footer{
     text-align: center;
 }
@@ -64,10 +104,6 @@ footer{
 }
 
 /* contact form */
-
-/* .ab{
-    position: relative;
-} */
 
 
 div{
@@ -81,6 +117,9 @@ div{
     width: 100%;
     height: 100%;  
 }
+
+/* form position */
+
 
 div form{
     
@@ -105,8 +144,204 @@ div form{
 
 input{
     width: 10vw;
+    border-radius: 5px;
+    margin: 0.2em;
 }
 
 div.btn{
   width: 10vw;
+}
+
+/* contact page grid */
+.gridc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nr fr cm"
+    "kl nn ak";
+    
+}
+
+.form{
+    grid-area: fr;
+    padding-top: 10%;
+}
+
+#fest{
+    grid-area: nr;
+  
+}
+
+#christ{
+    grid-area: cm;
+    
+}
+
+#klab{
+    grid-area: kl;
+}
+
+#neon{
+    grid-area: nn;
+}
+
+#awake{
+    grid-area: ak;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width: 700px) {
+   /* navigation resize */
+
+    .grid{
+        display: grid;
+        background-color: black;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+}
+nav a{
+    font-size: 1.5ch;
+}
+
+/* form resize */
+
+div form{
+    width: 90vw;
+}
+input{
+    width: 50vw;
+}
+
+.images{
+    width: 50vw;
+}
+h1.tracks{
+    font-size: 30px;
+}
+
+img.ig{
+    width:20%;
+}
+img.facebook{
+    width: 20%;
+}
+
+#astral, #astral2, #astral3, #dj1, #boner{
+    width: 50vw;
+}
+
+}
+
+
+@media screen and (max-width: 1200px){
+    /* contact page resize */
+    .gridc{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "fr fr"
+        "nr cm"
+        "kl nn"
+        "ak -"
+        
+    }
+
+    /* form resize */
+    div form{
+        min-width: 80vw;
+    }
+    input{
+        width: 50vw;
+    }
+    /* about page resize */
+    .maincont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "astral2 astral" 
+        "main main"
+        "main main"
+        "dj astral3" 
+        "boner -"
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    /* contact page grid resize */
+    .gridc{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "fr"
+        "nr" 
+        "cm"
+        "kl" 
+        "nn"
+        "ak"
+        
+    }
+
+    #fest, #christ, #klab, #neon, #awake{
+        width: 50vw;
+    }
+
+    main p{
+        font-size: 15px;
+    }
+    .maincont{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "astral2" 
+        "main"
+        "main"
+        "main"
+        "main"
+        "astral"
+        "dj" 
+        "astral3" 
+        "boner"
+    }
+}
+
+/* navbar resize */
+@media screen and (max-width: 550px){
+  
+    nav a{
+            font-size: 1ch;
+        margin: 2.5px;
+    }
+    nav ul{
+        display:block;
+        text-align: center;
+     
+       }
+ 
+     nav ul li{
+         margin: 10px;
+     }
+    
+ 
+
+ 
 }

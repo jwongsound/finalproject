@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>J.WONG</title>
-    <link rel="stylesheet" href="position.css">
-    <link rel="stylesheet" href="base2.css">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
     
     <style>
-        header{
+header{
     background-image: url(logo.jpg);
     background-size: cover;
 
@@ -20,12 +19,61 @@
     /* preserving aspect ratio */
     /* width: 100vw; */
     height: 90vh;
+    min-width:20%;
 
 
 }
 body{
     background-color: #1A0A17;
 }
+
+
+
+footer{
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 700px) {
+   header{
+       height:60vh;
+       background-position: none;
+   }
+   
+   nav ul{
+       display:block;
+       text-align: center;
+    
+      }
+
+    nav ul li{
+        margin: 20px;
+    }
+   nav a{
+       
+       font-size: 2.5ch;
+
+   }
+   .ig{
+       width: 10%;
+   }
+   .facebook{
+       width: 10%;
+   }
+    }
+
+@media screen and (max-width: 400px) {
+    header{
+        height: 40vh;
+    }
+    .ig{
+        width:20%;
+    }
+    .facebook{
+        width: 20%;
+    }
+}   
+
     </style>
 </head>
 <header></header>
@@ -39,8 +87,11 @@ body{
         <a href="contact.html"><li>Contact</li></a>
     </ul>
 </nav>
+
 <footer>
-    <p>Justin Wong 2019</p>
+   <a href="#"><img class="facebook"  src="thumbnail_fb.png" alt=""></a>
+    <a href="#"><img class="ig" src="thumbnail_ig.png" alt="instagram link"></a>
+    <h6>Justin Wong 2019</h6>
 </footer>
 </body>
 </html>
