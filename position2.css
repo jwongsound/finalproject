@@ -330,6 +330,7 @@ img.facebook{
     nav a{
             font-size: 1ch;
         margin: 2.5px;
+    
     }
     nav ul{
         display:block;
@@ -338,7 +339,7 @@ img.facebook{
        }
  
      nav ul li{
-         margin: 10px;
+         /* margin: 10px; */
      }
     
  
