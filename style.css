@@ -1,4 +1,4 @@
-
+/* navbar styles and hovers */
 a:hover{
     color:#863643;
     transition: 0.25s ease;
@@ -15,7 +15,7 @@ main p{
     font-size: 4em;
     color: #F1CCDC; 
 }
-
+/* gallery */
 section{
     /*   width:60vw; */
       
@@ -96,6 +96,7 @@ section{
       border-color: rgba(250, 0, 229, 0.719);
       } 
      
+    /* footer styles */
      footer{
        background: black;  
        /* height: 20px; */
@@ -107,12 +108,12 @@ section{
      }
 
     .facebook{
-      width: 6%;
+      width: 4%;
       background-color: #F1CCDC;
     }
 
     .ig{
-      width: 6%;
+      width: 4%;
       background-color: #F1CCDC;
     }
 
